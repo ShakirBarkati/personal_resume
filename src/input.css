@@ -1,1 +1,26 @@
 @import "tailwindcss";
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+:root {
+  --neutral-primary: #ffffff;
+  --neutral-secondary-soft: #f8f9fa;
+  --neutral-tertiary: #e9ecef;
+  --heading: #1a202c;
+  --body: #4a5568;
+  --purple: #8b5cf6;
+  --purple-strong: #7c3aed;
+  --purple-medium: #c4b5fd;
+  --fg-purple: #8b5cf6;
+  --default: #e2e8f0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* Account for fixed navbar */
+}
