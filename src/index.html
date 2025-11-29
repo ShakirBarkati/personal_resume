@@ -17,142 +17,255 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Personal Resume</title>
   </head>
-  <body>
-    <!-- Section Nav Bar Start -->
-    <nav
-      class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default"
-    >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <!-- Logo Section -->
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="./assets/img/resume_logo.png"
-            class="h-7"
-            alt="Resume Logo"
-          />
-          <span
-            class="self-center text-xl text-heading font-semibold whitespace-nowrap"
-            >Shakir Barkati</span
-          >
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="flex md:order-2 space-x-2">
-          <div class="hidden md:flex items-center space-x-2">
-            <button
-              type="button"
-              class="text-white bg-purple hover:bg-purple-strong focus:ring-4 focus:ring-purple-medium font-medium rounded-base text-sm px-4 py-2 focus:outline-none"
+  <body class="bg-purple-50">
+    <main class="container mx-auto">
+      <!-- Section Nav Bar Start -->
+      <nav class="fixed w-full z-20 top-0 start-0 border-b border-default">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./assets/img/resume_logo.png"
+              class="h-7"
+              alt="Resume Logo"
+            />
+            <span
+              class="self-center text-xl text-heading font-semibold whitespace-nowrap"
+              >Shakir Barkati</span
             >
-              Contact
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="flex md:order-2 space-x-2">
+            <div class="hidden md:flex items-center space-x-2">
+              <button
+                type="button"
+                class="text-white bg-purple hover:bg-purple-strong focus:ring-4 focus:ring-purple-medium font-medium rounded-base text-sm px-4 py-2 focus:outline-none"
+              >
+                Contact
+              </button>
+            </div>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden focus:outline-none focus:ring-2"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
             </button>
           </div>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
+
+          <!-- Navigation Links -->
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
           >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
+            <ul
+              class="flex flex-col md:bg-transparent bg-default font-medium p-4 md:p-0 mt-4 border border-default rounded-base md:flex-row md:space-x-8 md:mt-0 md:border-0"
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Navigation Links -->
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-neutral-primary"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-white bg-purple rounded md:bg-transparent md:text-fg-purple md:p-0"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
-                >Process</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
-                >Blog</a
-              >
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
-                >Services</a
-              >
-            </li>
-            <!-- Mobile Auth Buttons -->
-            <li class="md:hidden mt-4">
-              <div class="flex flex-col space-y-2">
-                <button
-                  type="button"
-                  class="text-body border border-default hover:bg-neutral-secondary-soft focus:ring-4 focus:ring-neutral-tertiary font-medium rounded-base text-sm px-4 py-2 focus:outline-none"
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-purple rounded md:bg-transparent md:text-fg-purple md:p-0"
+                  aria-current="page"
+                  >Home</a
                 >
-                  Contact
-                </button>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
+                  >Blog</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-heading rounded md:hover:bg-transparent md:border-0 md:hover:text-fg-purple md:p-0"
+                  >Services</a
+                >
+              </li>
+              <!-- Mobile Auth Buttons -->
+              <li class="md:hidden mt-4">
+                <div class="flex flex-col space-y-2">
+                  <button
+                    type="button"
+                    class="text-body border focus:ring-4 font-medium rounded-base text-sm px-4 py-2 focus:outline-none"
+                  >
+                    Contact
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Section Nav Bar End -->
+      </nav>
+      <!-- Section Nav Bar End -->
 
-    <!-- Main Content -->
-    <main class="max-w-screen-xl mx-auto p-4">
-      <h1 class="text-3xl font-bold text-heading mb-4">Welcome to My Resume</h1>
-      <p class="text-body mb-4">
-        This is a sample content to demonstrate the responsive navbar. Scroll
-        down to see how the fixed navbar stays at the top.
-      </p>
-      <div class="h-screen"></div>
+      <!-- Main Content -->
+      <section class="container w-full">
+        <!-- Hero Section Start -->
+        <!-- Hero Section -->
+        <section class="py-12 md:py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <!-- Left Content -->
+              <div class="order-2 lg:order-1">
+                <p class="text-lg text-gray-500 mb-2">Hello, I'm</p>
+                <h1
+                  class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4"
+                >
+                  Muhammad <span class="gradient-text">Shakir Barkati</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                  I’m a Karachi-based web & software developer with
+                  <span class="font-semibold text-indigo-600"
+                    >1.5 years WordPress job experience</span
+                  >
+                  and
+                  <span class="font-semibold text-purple-600"
+                    >, skilled in HTML, CSS, JS, React, PHP, MySQL,
+                  </span>
+                  and currently studying at SMIT.
+                </p>
+
+                <!-- Stats Section -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+                  <div>
+                    <h3 class="text-3xl font-bold text-gray-900">1.5 Y.</h3>
+                    <p class="text-gray-500">Experience</p>
+                  </div>
+                  <div>
+                    <h3 class="text-3xl font-bold text-gray-900">50+</h3>
+                    <p class="text-gray-500">Project Completed</p>
+                  </div>
+                  <!-- <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-3xl font-bold text-gray-900">58</h3>
+                    <p class="text-gray-500">Happy Client</p>
+                  </div> -->
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <button
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300"
+                  >
+                    Say Hello
+                  </button>
+                  <button
+                    class="border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-8 rounded-lg transition duration-300"
+                  >
+                    Download CV
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Content - Profile Image -->
+              <div
+                class="order-1 lg:order-2 flex justify-center lg:justify-end"
+              >
+                <div class="relative">
+                  <!-- Profile Image Container -->
+                  <div
+                    class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full overflow-hidden shadow-xl"
+                  >
+                    <!-- Placeholder for profile image -->
+                    <div
+                      class="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-200 to-purple-200"
+                    >
+                      <img
+                        src="./assets/img/personal_img.png"
+                        alt="Profile Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Floating Elements -->
+                  <div
+                    class="absolute -top-4 -right-4 bg-white p-4 rounded-xl shadow-lg"
+                  >
+                    <div class="flex items-center">
+                      <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                      <span class="text-sm font-medium text-gray-700"
+                        >Available for work</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg"
+                  >
+                    <div class="text-center">
+                      <div
+                        class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5 text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-xs text-gray-500">
+                        Emerging Full-Stack Developer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero Section End -->
+      </section>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   </body>
 </html>
