@@ -29,8 +29,8 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+  background: linear-gradient(90deg, #a855f7 0%, #9333ea 100%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-

@@ -1,3 +1,7 @@
+main {
+  width: 85%;
+  margin: 0 auto;
+}
 /* Logo Slider CSS */
 @keyframes slide {
   0% {
